@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- IZQUIERDA -->
+    <android.widget.RelativeLayout
+        android:layout_weight=".33"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.widget.RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android:android.support.v7.widget.AppCompatRadioButton
+                layout_height="match_parent"
+                layout_width="match_parent" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.widget.RadioGroup>
+    </android.widget.RelativeLayout>
+
+    <!-- CENTRO -->
+    <android.widget.RelativeLayout
+        android:layout_weight=".33"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.widget.RelativeLayout>
+
+    <!-- DERECHA -->
+    <android.widget.RelativeLayout
+        android:layout_weight=".33"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <WebView  xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </android.widget.RelativeLayout>
+</android.support.v7.widget.LinearLayoutCompat>
