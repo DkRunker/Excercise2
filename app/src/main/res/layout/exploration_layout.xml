@@ -9,22 +9,26 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.widget.RadioGroup
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <android:android.support.v7.widget.AppCompatRadioButton
-                layout_height="match_parent"
-                layout_width="match_parent" />
-
-            <android.support.v7.widget.AppCompatRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <android.support.v7.widget.AppCompatRadioButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-        </android.widget.RadioGroup>
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/radio_pirates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pirates"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_ninjas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ninjas"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_stuff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stuff"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
     </android.widget.RelativeLayout>
 
     <!-- CENTRO -->
@@ -32,15 +36,21 @@
         android:layout_weight=".33"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <android.support.v7.widget.AppCompatCheckBox
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-        <android.support.v7.widget.AppCompatCheckBox
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-        <android.support.v7.widget.AppCompatCheckBox
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+        <CheckBox android:id="@+id/checkbox_meat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/meat"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_cheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cheese"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_thing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/thing"
+            android:onClick="onCheckboxClicked"/>
         <android.support.v7.widget.AppCompatImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
